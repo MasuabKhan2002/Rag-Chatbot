@@ -1,0 +1,14 @@
+{
+    "title": "User Data Prompt",
+    "precondition": "None",
+    "description": "This prompt is used when a user asks their name, student number, campus or course.",
+    "keywords": ["my", "campus", "course"],
+    "questions": ["What course am i studying", "what is my name?", "what is my student number?", "what campus am on?", "what course am I enrolled in?", "provide information on my campus?", "what is my course", "tell me my course"],
+    "type": "query",
+    "name": "user_index_prompt",
+    "text": "We have provided context information below.\n ---------------------\n{context_str}\n Given this information, please answer the question: {query_str}.",
+    "index": "user_index",
+    "db": "user_index",
+    "collection": "user_index",
+    "filters": "filters"
+}

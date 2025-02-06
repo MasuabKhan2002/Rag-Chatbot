@@ -1,0 +1,12 @@
+{
+    "title": "Library Prompt",
+    "description": "This prompt is used when a user asks to check for database or book from the library",
+    "questions": ["Find a book in the library", "What sources are in the library database?", "Find IEEE from the library"],
+    "type": "query",
+    "name": "library_query_prompt",
+    "text": "We have provided context information below.\n ---------------------\n{context_str}\n Given this information, please answer the question: {query_str}. Include any useful links found relating to the query.",
+    "index": "library_index",
+    "db": "library",
+    "collection": "library_index",
+    "filters": "None"
+}

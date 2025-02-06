@@ -1,0 +1,12 @@
+{
+    "title": "Greeting Prompt",
+    "description": "This prompt is used when a user greets the system",
+    "questions": ["hi", "hello", "hey"],
+    "type": "query",
+    "name": "greeting_prompt",
+    "text": "please answer the question: {query_str}, by just greeting the user and asking if they need any help",
+    "index": "index",
+    "db": "db",
+    "collection": "collection",
+    "filters": "timetable"
+}

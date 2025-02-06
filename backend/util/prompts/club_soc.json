@@ -1,0 +1,17 @@
+{
+    "title": "Clubs & Socs Prompt",
+    "description": "This prompt is used when a user inquires about any events or clubs and societies",
+    "type": "chat",
+    "name": "club_soc_prompt",
+    "stop_word": "INFO_COMPLETE",
+    "cancel_message": "Stop events",
+    "questions": ["What are some upcoming club events", "What are some upcoming society events?", "What clubs are on today?", "tell me about this club or society"],
+    "steps": 
+      [
+        {"id": 0, "query_condition": "None", "message": "We have provided context information below.\n ---------------------\n{context_str}\n Given this information, please answer the question: {query_str}."}
+      ],
+    "index": "clubs_socs_index",
+    "db": "clubs_socs",
+    "collection": "clubs_socs_index",
+    "filters": "None"
+}

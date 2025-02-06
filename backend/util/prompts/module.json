@@ -1,0 +1,19 @@
+{
+    "title": "Module Information Prompt",
+    "description": "This prompt is used to find information from a module the user wishes to inquire about.",
+    "type": "chat",
+    "name": "module_info_prompt",
+    "stop_word": "INFO_COMPLETE",
+    "cancel_message": "Cancel Module Info Inquiry",
+    "questions": ["Tell me about a module?", "Help me with a module", "Help me get some information from a module", "Help me with some exam questions"],
+    "steps": 
+      [
+        {"id": 0, "query_condition": "None", "message": "A user will ask for help for a module and you will first ask the user to specify the module they wish to inquire about."},
+        {"id": 1, "query_condition": "modules", "message": "A module is already provided by a user and you will ask if there is anything specific they need help with. Do not privide any information just ask if what they need help with."},
+        {"id": 2, "query_condition": "None", "message": "We have provided context information below.\n ---------------------\n{context_str}\n Given this information, please answer the question: {query_str} about the course."}
+      ],
+    "index": "index",
+    "db": "db",
+    "collection": "collection",
+    "filters": "None"
+}

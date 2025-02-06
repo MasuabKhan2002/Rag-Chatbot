@@ -1,0 +1,13 @@
+{
+    "title": "Timetable Prompt",
+    "precondition": "None",
+    "description": "This prompt is used when a user asks to view their timetable",
+    "questions": ["What lectures do I have today?", "Can I view my timetable for this Week?", "What is my timetable?"],
+    "type": "query",
+    "name": "timetable_query_prompt",
+    "text": "We have provided context information below.\n ---------------------\n{context_str}\n Given this information, please answer the question: {query_str}.\n The response should include important details such as module name, location and time. \nDo not use words like 'Based on the provided information'.",
+    "index": "index",
+    "db": "db",
+    "collection": "collection",
+    "filters": "timetable"
+}
